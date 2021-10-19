@@ -36,3 +36,10 @@ body{
 #submit{
     background-color: whitesmoke;
 }
+
+.errorMessage{
+    font-weight: bold;
+    font-size: larger;
+    border: 1px solid black;
+    color: red;
+}

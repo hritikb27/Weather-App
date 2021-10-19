@@ -1,4 +1,5 @@
-const mainDiv = document.querySelector('.main')
+const mainDiv = document.querySelector('.main');
+const form = document.querySelector('#form');
 
 function appendToDom(name, temp, desc){
     if(document.querySelector('.content')){
@@ -16,6 +17,26 @@ function appendToDom(name, temp, desc){
     createDiv.appendChild(weatherTemperature);
     createDiv.appendChild(weatherDescription);
     mainDiv.appendChild(createDiv);
-}
+};
 
-export default appendToDom;
+function errorDom(){
+    const content = document.querySelector('.content');
+    if(content){
+        content.remove()
+    }
+    const errorPara = document.createElement('p');
+    errorPara.setAttribute('class', 'errorMessage')
+    errorPara.textContent = 'Please try entering another City!';
+    form.appendChild(errorPara);
+};
+
+function clearInput(){
+    const errorMessage = document.querySelector('.errorMessage');
+    if(errorMessage){
+        errorMessage.remove();
+    }
+    const searchName = document.querySelector('#search-name');
+    searchName.value = '';
+};
+
+export {appendToDom, errorDom, clearInput};
