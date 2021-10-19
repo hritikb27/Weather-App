@@ -6,6 +6,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .main{
@@ -22,6 +23,16 @@ body{
     align-items: center;
     min-width: 6vw;
     min-height: 12vh;
-    border: 2px solid brown;
-    background-color: burlywood;
+    border: 2px solid palevioletred;
+    background-color: papayawhip;
+    border-radius: 5px;
+}
+
+#search-name{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#submit{
+    background-color: whitesmoke;
 }

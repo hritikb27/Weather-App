@@ -12,8 +12,8 @@ function returnData(data){
     return {cityName, weatherInfo, weatherDesc};
 }
 
-form.addEventListener('click', (event)=>{
-    event.preventDefault();
+form.addEventListener('click', ()=>{
+    preventDefault();
     if(!searchName.value==''){
         submitBtn.addEventListener('click', getWeatherData(searchName.value));
     }
