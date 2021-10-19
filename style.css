@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.content{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 6vw;
+    min-height: 12vh;
+    border: 2px solid brown;
+    background-color: burlywood;
+}
