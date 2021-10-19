@@ -7,8 +7,9 @@ const form = document.querySelector('#form');
 function returnData(data){
     const weatherInfo = data.main.temp;
     const weatherDesc = data.weather[0].description;
+    const cityName = data.name;
 
-    return {weatherInfo, weatherDesc};
+    return {cityName, weatherInfo, weatherDesc};
 }
 
 form.addEventListener('click', (e)=>{
