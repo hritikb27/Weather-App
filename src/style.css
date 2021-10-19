@@ -1,5 +1,7 @@
 body{
-    background-color: aliceblue;
+    background-image: url('https://www.teahub.io/photos/full/2-27242_pink-clouds-wallpaper-4k.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
